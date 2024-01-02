@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Nhập</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Bảng theo chiều dọc</title>
+    <style>
+        /* Thêm một số CSS để tùy chỉnh giao diện của bảng và div */
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .table-container table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .table-container th, .table-container td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .table-container th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <!-- Thêm các dòng dữ liệu khác nếu cần -->
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Trần Thị B</td>
+                    <td>30</td>
+                </tr>
+                <!-- Thêm các dòng dữ liệu khác nếu cần -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
+
+    <h2>Đăng Nhập</h2>
+    <form action="process_login.php" method="post">
+        <label for="tk">Tên đăng nhập:</label>
+        <input type="text" id="tk" name="tk" required><br>
+
+        <label for="mk">Mật khẩu:</label>
+        <input type="password" id="mk" name="mk" required><br>
+
+        <button type="submit">Đăng Nhập</button>
+    </form>
+</body>
+</html>
